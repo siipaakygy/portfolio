@@ -7,37 +7,37 @@ import { useState } from "react";
 const projects = [
   {
     title: "REST API Token Authentication",
-    desc: "REST API menggunakan CodeIgniter 4 dengan autentikasi token, CRUD item dan JSON response.",
+    desc: "Mengembangkan backend REST API menggunakan CodeIgniter 4. Saya membuat sistem autentikasi berbasis token, endpoint CRUD, validasi request, integrasi database MySQL, serta pengujian API menggunakan Postman.",
     stack: ["CodeIgniter4", "REST API", "MySQL"],
     link: "https://github.com/siipaakygy/RES-API-Token-Based-Auth",
   },
   {
     title: "Website Pergudangan",
-    desc: "Sistem manajemen pergudangan dengan CodeIgniter 4 + AdminLTE.",
+    desc: "Mengembangkan sistem manajemen pergudangan menggunakan CodeIgniter 4 dan AdminLTE. Saya membuat fitur pengelolaan barang masuk dan keluar, manajemen stok, autentikasi pengguna, serta integrasi database MySQL.",
     stack: ["CodeIgniter4", "AdminLTE", "MySQL"],
     link: "https://github.com/siipaakygy/sistem-pergudangan",
   },
   {
     title: "Backend Presensi Siswa",
-    desc: "REST API backend presensi siswa menggunakan Laravel. Mengelola data siswa dan kehadiran dengan MySQL.",
+    desc: "Bertanggung jawab membangun backend REST API menggunakan Laravel. Saya membuat endpoint pengelolaan data siswa, presensi, autentikasi, validasi data, serta integrasi database MySQL untuk mendukung aplikasi presensi.",
     stack: ["Laravel", "REST API", "MySQL"],
     link: "https://github.com/siipaakygy/UKL_BE_Presensi",
   },
   {
     title: "Website Perpustakaan",
-    desc: "Sistem manajemen perpustakaan berbasis web (PHP Native). Fitur input, pencarian, peminjaman & pengembalian buku.",
+    desc: "Mengembangkan sistem perpustakaan berbasis PHP Native. Saya membuat fitur CRUD buku, pencarian data, peminjaman dan pengembalian buku, serta pengelolaan database MySQL.",
     stack: ["PHP", "MySQL"],
     link: "https://github.com/siipaakygy/Perpus_php_native",
   },
   {
     title: "Website Toko Online",
-    desc: "Website e-commerce lengkap dengan Laravel. Fitur produk, keranjang belanja, dan transaksi.",
+    desc: "Mengembangkan aplikasi e-commerce menggunakan Laravel. Saya mengimplementasikan fitur manajemen produk, keranjang belanja, transaksi, autentikasi pengguna, serta pengelolaan database.",
     stack: ["Laravel", "MySQL", "TypeScript"],
     link: "https://github.com/siipaakygy/Toko_online",
   },
   {
     title: "Frontend Web Musik",
-    desc: "UI/UX website pemutar musik interaktif menggunakan TypeScript.",
+    desc: "Mengembangkan antarmuka website pemutar musik menggunakan TypeScript, HTML, dan CSS. Saya merancang tampilan responsif, navigasi pengguna, serta interaksi UI yang lebih menarik dan mudah digunakan.",
     stack: ["TypeScript", "HTML", "CSS"],
     link: "https://github.com/siipaakygy/Frontend-Web-Musik",
   },
@@ -282,13 +282,18 @@ export default function Home() {
         initial="hidden"
         whileInView="show"
       >
-        <h2 className="text-5xl font-bold mb-12 text-center">Pendidikan</h2>
-        <div className="bg-gray-900/50 border border-gray-700 rounded-3xl p-8 md:p-12">
-          <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-4">
-            <div>
-              <h3 className="text-2xl font-semibold">SMK Telkom Malang</h3>
-              <p className="text-blue-400">Rekayasa Perangkat Lunak • Expertise: Laravel</p>
-            </div>
+          <h3 className="text-2xl font-semibold">SMK Telkom Malang</h3>
+              <p className="text-blue-400">
+                Rekayasa Perangkat Lunak (RPL)
+              </p>
+              <p className="text-gray-300 mt-3">
+                Mempelajari pengembangan perangkat lunak, pemrograman web,
+                basis data, REST API, dan pengembangan aplikasi menggunakan
+                Laravel, CodeIgniter, PHP, serta MySQL.
+              </p>
+              <p className="text-sm text-gray-400 mt-4">
+                2023 – 2026
+              </p>
             <div className="text-right">
               <p className="text-sm text-gray-400">2023 – 2026 (sedang berjalan)</p>
             </div>
