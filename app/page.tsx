@@ -334,40 +334,55 @@ export default function Home() {
         </div>
       </motion.section>
 
-      {/* PROJECTS */}
-      <section id="projects" className="max-w-6xl mx-auto px-6 py-28">
-        <h2 className="text-5xl font-bold mb-16 text-center">Featured Projects</h2>
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {projects.map((project, i) => (
-            <motion.div
-              key={i}
-              variants={fadeUp}
-              initial="hidden"
-              whileInView="show"
-              whileHover={{ scale: 1.04, rotate: 1 }}
-              className="group bg-[#0f172a] border border-gray-700 p-7 rounded-3xl hover:border-blue-400 hover:shadow-2xl hover:shadow-blue-500/10 transition-all duration-300"
+    {/* PROJECTS */}
+<section id="projects" className="max-w-6xl mx-auto px-6 py-28">
+  <h2 className="text-5xl font-bold mb-16 text-center">
+    Featured Projects
+  </h2>
+
+  <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+    {projects.map((project, i) => (
+      <motion.div
+        key={i}
+        variants={fadeUp}
+        initial="hidden"
+        whileInView="show"
+        whileHover={{ scale: 1.03 }}
+        className="group bg-[#0f172a] border border-gray-700 p-7 rounded-3xl hover:border-blue-400 hover:shadow-xl transition-all duration-300 flex flex-col"
+      >
+        <div className="h-2 w-12 bg-blue-400 rounded mb-6"></div>
+
+        <h3 className="text-2xl font-semibold mb-4">
+          {project.title}
+        </h3>
+
+        <p className="text-gray-400 mb-6 leading-7">
+          {project.desc}
+        </p>
+
+        <div className="flex flex-wrap gap-2 mb-8">
+          {project.stack.map((tech) => (
+            <span
+              key={tech}
+              className="text-xs bg-blue-500/10 text-blue-400 px-4 py-1.5 rounded-2xl"
             >
-              <div className="h-2 w-12 bg-blue-400 rounded mb-6 group-hover:w-16 transition-all"></div>
-              <h3 className="text-2xl font-semibold mb-3">{project.title}</h3>
-              <p className="text-gray-400 mb-6">{project.desc}</p>
-              <div className="flex flex-wrap gap-2 mb-8">
-                {project.stack.map((tech) => (
-                  <span key={tech} className="text-xs bg-blue-500/10 text-blue-400 px-4 py-1.5 rounded-2xl">
-                    {tech}
-                  </span>
-                ))}
-              </div>
-              <a
-                href={project.link}
-                target="_blank"
-                className="inline-flex items-center gap-2 text-blue-400 hover:text-white font-medium"
-              >
-                Lihat Repository →
-              </a>
-            </motion.div>
+              {tech}
+            </span>
           ))}
         </div>
-      </section>
+
+        <a
+          href={project.link}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="mt-auto inline-flex items-center gap-2 text-blue-400 hover:text-white font-medium"
+        >
+          Lihat Repository →
+        </a>
+      </motion.div>
+    ))}
+  </div>
+</section>
 
       {/* CERTIFICATES */}
       <section id="certificates" className="bg-gray-900 py-24 px-6">
