@@ -274,7 +274,7 @@ export default function Home() {
         </div>
       </section>
 
-     {/* EDUCATION */}
+    {/* EDUCATION */}
 <motion.section
   id="education"
   className="max-w-5xl mx-auto px-6 py-28"
