@@ -152,7 +152,7 @@ export default function Home() {
         )}
       </nav>
 
-      {/* HERO - VERSI FRESH GRADUATE */}
+      {/* HERO */}
       <section className="min-h-screen flex flex-col justify-center items-center text-center px-6 pt-20">
         <motion.div
           animate={{ y: [0, -15, 0] }}
@@ -264,7 +264,16 @@ export default function Home() {
           <div className="mt-16">
             <h3 className="text-3xl font-semibold text-center mb-8">Soft Skills</h3>
             <div className="flex flex-wrap justify-center gap-3">
-              {["Teamwork", "Effective Communication", "Creative Thinking", "Problem Solving"].map((skill) => (
+              {[
+                  "Problem Solving",
+                  "Communication",
+                  "Teamwork",
+                  "Adaptability",
+                  "Time Management",
+                  "Critical Thinking",
+                  "Attention to Detail",
+                  "Self Learning",
+              ].map((skill) => (
                 <span key={skill} className="bg-gray-800 text-gray-200 px-6 py-3 rounded-2xl text-sm font-medium hover:bg-blue-500 hover:text-white transition">
                   {skill}
                 </span>
