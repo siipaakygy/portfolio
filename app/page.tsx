@@ -274,33 +274,45 @@ export default function Home() {
         </div>
       </section>
 
-      {/* EDUCATION */}
-      <motion.section
-        id="education"
-        className="max-w-5xl mx-auto px-6 py-28"
-        variants={fadeUp}
-        initial="hidden"
-        whileInView="show"
-      >
-          <h3 className="text-2xl font-semibold">SMK Telkom Malang</h3>
-              <p className="text-blue-400">
-                Rekayasa Perangkat Lunak (RPL)
-              </p>
-              <p className="text-gray-300 mt-3">
-                Mempelajari pengembangan perangkat lunak, pemrograman web,
-                basis data, REST API, dan pengembangan aplikasi menggunakan
-                Laravel, CodeIgniter, PHP, serta MySQL.
-              </p>
-              <p className="text-sm text-gray-400 mt-4">
-                2023 – 2026
-              </p>
-            <div className="text-right">
-              <p className="text-sm text-gray-400">2023 – 2026 (sedang berjalan)</p>
-            </div>
-          </div>
-        </div>
-      </motion.section>
+     {/* EDUCATION */}
+<motion.section
+  id="education"
+  className="max-w-5xl mx-auto px-6 py-28"
+  variants={fadeUp}
+  initial="hidden"
+  whileInView="show"
+>
+  <h2 className="text-5xl font-bold mb-12 text-center">
+    Education
+  </h2>
 
+  <div className="bg-gray-900/70 border border-gray-700 rounded-3xl p-8">
+    <div className="flex flex-col md:flex-row justify-between gap-4">
+      <div>
+        <h3 className="text-2xl font-semibold">
+          SMK Telkom Malang
+        </h3>
+
+        <p className="text-blue-400">
+          Rekayasa Perangkat Lunak (RPL)
+        </p>
+
+        <p className="text-gray-300 mt-3">
+          Mempelajari pengembangan perangkat lunak,
+          pemrograman web, basis data, REST API,
+          dan pengembangan aplikasi menggunakan
+          Laravel, CodeIgniter, PHP, serta MySQL.
+        </p>
+      </div>
+
+      <div className="text-right">
+        <p className="text-sm text-gray-400">
+          2023 - 2026 (Sedang Berjalan)
+        </p>
+      </div>
+    </div>
+  </div>
+</motion.section>
       {/* EXPERIENCE */}
       <motion.section
         id="experience"
