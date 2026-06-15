@@ -349,7 +349,7 @@ export default function Home() {
             >
               <div className="h-2 w-12 bg-blue-400 rounded mb-6 group-hover:w-16 transition-all"></div>
               <h3 className="text-2xl font-semibold mb-3">{project.title}</h3>
-              <p className="text-gray-400 mb-6 line-clamp-3">{project.desc}</p>
+              <p className="text-gray-400 mb-6">{project.desc}</p>
               <div className="flex flex-wrap gap-2 mb-8">
                 {project.stack.map((tech) => (
                   <span key={tech} className="text-xs bg-blue-500/10 text-blue-400 px-4 py-1.5 rounded-2xl">
